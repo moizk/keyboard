@@ -1,7 +1,7 @@
 /* Global Rules */
 
 * {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family:'VAG Rounded W01 Thin', Helvetica, Arial, sans-serif;
 }
 
 .text-left { text-align: left; }
@@ -45,20 +45,21 @@ div.keyboard {
   margin: 0 auto;
   width: 1170px;
   /* Typography */
+  font-family:'VAG Rounded W01 Thin' !important;
   /* Visual */
   background-color: #eceef1;
-background-image: -webkit-gradient(
+  background-image: -webkit-gradient(
   linear,
   left bottom,
   left top,
   color-stop(0, #D7D8DC),
   color-stop(0.23, #E0E0E0)
 );
-background-image: -o-linear-gradient(top, #D7D8DC 0%, #E0E0E0 23%);
-background-image: -moz-linear-gradient(top, #D7D8DC 0%, #E0E0E0 23%);
-background-image: -webkit-linear-gradient(top, #D7D8DC 0%, #E0E0E0 23%);
-background-image: -ms-linear-gradient(top, #D7D8DC 0%, #E0E0E0 23%);
-background-image: linear-gradient(to top, #D7D8DC 0%, #E0E0E0 23%);
+  background-image: -o-linear-gradient(top, #D7D8DC 0%, #E0E0E0 23%);
+  background-image: -moz-linear-gradient(top, #D7D8DC 0%, #E0E0E0 23%);
+  background-image: -webkit-linear-gradient(top, #D7D8DC 0%, #E0E0E0 23%);
+  background-image: -ms-linear-gradient(top, #D7D8DC 0%, #E0E0E0 23%);
+  background-image: linear-gradient(to top, #D7D8DC 0%, #E0E0E0 23%);
   -webkit-border-radius: 20px;
      -moz-border-radius: 20px;
           border-radius: 20px;
@@ -111,6 +112,45 @@ div.keyboard li.special-character-key {
 
 div.keyboard li.letter-key div.letter {
   padding-top: 25px;
+}
+
+div.keyboard li#left-key {
+  margin-left: 5px;
+  margin-top: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 70px;
+  text-align: center;
+  vertical-align: top;
+}
+
+div.keyboard li#right-key {
+  margin-top: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 70px;
+  text-align: center;
+  vertical-align: top;
+}
+
+div.keyboard li#up-key {
+  display: inline-table;
+  padding-top: 5px;
+  margin-top: 20px;
+  padding-bottom: 5px;
+  width: 70px;
+  text-align: center;
+  vertical-align: top;
+}
+
+div.keyboard li#down-key {
+  display: inline-table;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 70px;
+  text-align: center;
+  margin-top: -9px;
+  margin-left: -74px;
 }
 
 /* First Row */
@@ -419,7 +459,6 @@ ul#keyboard-sixth-row > li {
   /* Box-model */
   margin-top: 15px;
   margin-left: 5px;
-  padding: 8px 35px 8px 8px;
   width: 30px;
   /* Typography */
   font-size: 12px;
@@ -446,33 +485,49 @@ ul#keyboard-sixth-row > li:hover {
 }
 
 ul#keyboard-sixth-row > li#fn-key {
+  height: 20px;
   margin-left: 15px;
   padding-top: 40px;
+  padding-left: 5px;
   vertical-align: top;
+  width: 65px;
 }
 
 ul#keyboard-sixth-row > li#control-key {
+  height: 20px;
   padding-top: 40px;
-  text-align: left;
+  padding-left: 5px;
   vertical-align: top;
+  width: 65px;
 }
 
 ul#keyboard-sixth-row > li.option-key {
-  line-height: 2;
-  text-align: left;
+  line-height: 2.5;
+  height: 60px;
+  padding-left: 5px;
+  padding-right: 5px;
   vertical-align: top;
+  width: 65px;
 }
 
 ul#keyboard-sixth-row > li#spacebar {
-  height: 48px;
-  width: 343px;
+  height: 60px;
+  width: 386px;
 }
 
 ul#keyboard-sixth-row > li.command-key {
-  line-height: 2;
-  text-align: left;
+  line-height: 1.4;
+  height: 60px;
   vertical-align: top;
-  width: 40px;
+  width: 81px;
+  text-align: center;
 }
+
+ul#keyboard-sixth-row > li.command-key div {
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
 
 
